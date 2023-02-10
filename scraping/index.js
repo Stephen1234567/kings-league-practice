@@ -52,6 +52,6 @@ async function getLeaderBoard () {
 }
 
 const leaderBoard = await getLeaderBoard()
-const filePath = path.join(process.cwd(), './db/leaderboard.json ')
+const filePath = path.join(process.cwd(), './db/leaderboard.json')
 
 await writeFile(filePath, JSON.stringify(leaderBoard, null, 2), 'utf-8')
